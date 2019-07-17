@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "predeploy": [
+      "cd public && jekyll build"
+    ],
+    "public": "public/_site",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
