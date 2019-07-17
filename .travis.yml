@@ -4,6 +4,9 @@ cache: bundler
 rvm:
   - 2.4.1
 
+before_install:
+  - bundle update --bundler
+
 script:
   - "./scripts/cibuild.sh"
 
