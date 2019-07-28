@@ -31,6 +31,12 @@ text:
   header:
     suptitle: "Wojewódzki Szpital Rehabilitacyjny dla Dzieci w Ameryce"
     title: "Porady medyczne od naszych specjalistów"
+
+links:
+  author: https://jedrzej.lewandowski.doctor/
+  operator: https://www.ameryka.com.pl/
+  privacyPolicy: https://www.ameryka.com.pl/pl/dla-pacjenta/ochrona-danych-osobowych
+  license: https://www.gnu.org/licenses/gpl-3.0.html
 # Prayer:
 #  Gloria Patri, et Filio, et Spiritui Sancto, sicut erat in principio et nunc et semper et in saecula
 #  saeculorum. Amen. In te, Domine, speravi: non confundar in aeternum.
