@@ -1,15 +1,17 @@
---- 
---- 
+---
+---
 
 @import "variables.scss";
 @import "mixins.scss";
 
-@import "bootstrap/bootstrap.scss";
+@import "bootstrap/scss/bootstrap";
 
 
 // Global CSS
 @import "global.scss";
+@import "layout.scss";
 
 //Page elements
 @import "header.scss";
-@import "footer.scss"
+@import "footer.scss";
+@import "navbar.scss";

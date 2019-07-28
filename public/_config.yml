@@ -21,8 +21,10 @@ exclude:
   - Gemfile.lock
 
 sass:
-  sass_dir: _sass
-  style: compressed
+  load_paths:
+        - _sass
+        - node_modules
+
 # Prayer:
 #  Gloria Patri, et Filio, et Spiritui Sancto, sicut erat in principio et nunc et semper et in saecula
 #  saeculorum. Amen. In te, Domine, speravi: non confundar in aeternum.

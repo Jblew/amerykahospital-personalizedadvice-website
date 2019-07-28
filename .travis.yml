@@ -4,6 +4,9 @@ cache: bundler
 rvm:
   - 2.3
 
+before_install:
+  - npm --prefix="./public" install
+
 script:
   - "./scripts/cibuild.sh"
 
