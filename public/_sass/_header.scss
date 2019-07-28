@@ -1,0 +1,53 @@
+#top-bg {
+    width: 100%;
+    background: url(/assets/photo/linarium-gauss.jpg) no-repeat;
+    background-size: cover;
+
+    -webkit-box-shadow: inset 0px -30px 20px -29px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: inset 0px -30px 20px -29px rgba(0, 0, 0, 0.65);
+    box-shadow: inset 0px -30px 20px -29px rgba(0, 0, 0, 0.65);
+}
+
+.header-device {
+    text-align: center;
+
+    img {
+        width: 50%;
+        margin: 0 auto;
+
+        @include media-breakpoint-up(sm) {
+            width: 100%;
+            margin: 0 0;
+        }
+    }
+}
+
+.header-titles {
+    margin-top: 1rem;
+
+    @include media-breakpoint-up(sm) {
+        margin-top: 3rem;
+    }
+}
+
+header {
+    margin-top: 2rem;
+
+    h1 {
+        color: white;
+        font-weight: 300;
+
+        font-size: 2.2rem;
+
+        @include media-breakpoint-up(sm) {
+            font-size: 3rem;
+        }
+    }
+
+    h2 {
+        color: white;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        font-size: 1rem;
+    }
+}

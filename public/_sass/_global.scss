@@ -1,8 +1,13 @@
 // Global styling for this template
+
 body {
     @include body-font;
 }
 
+.text-small {
+    font-size: 50%;
+}
+/*
 p {
     line-height: 1.75;
 }
@@ -44,3 +49,4 @@ img::selection {
 img::-moz-selection {
     background: transparent;
 }
+*/
