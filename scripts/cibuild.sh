@@ -4,4 +4,4 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../public"
 cd "${DIR}"
 
 bundle exec jekyll build
-bundle exec htmlproofer --href-ignore "#" ./_site
+bundle exec htmlproofer ./_site
