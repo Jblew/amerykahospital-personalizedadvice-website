@@ -39,7 +39,7 @@ links:
   license: https://www.gnu.org/licenses/gpl-3.0.html
   advicePanel: /advice-panel
   advicePanelOnline: /advice-panel
-  advicePanelDownload: /advice-panel-download
+  advicePanelDownload: /advice-app-download
   roleManagement: /role-management/
   authorEmailSplit: jedrzej [at] lewandowski.doctor
 # Prayer:
