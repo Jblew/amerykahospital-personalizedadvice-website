@@ -21,6 +21,10 @@ main {
             margin-top: 2rem;
         }
     }
+
+    hr {
+        width: 100%;
+    }
 }
 
 .home {
@@ -35,7 +39,7 @@ main {
     .feature-row {
         @include media-breakpoint-up(xs) {
             padding-top: 2rem;
-            padding-bottom: 5rem;
+            padding-bottom: 3rem;
         }
     }
 
