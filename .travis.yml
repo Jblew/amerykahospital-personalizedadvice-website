@@ -10,7 +10,7 @@ before_install:
 
 script:
   - "./scripts/cibuild.sh"
-  - npm --prefix="./roles-manager-app" build
+  - npm --prefix="./roles-manager-app" run build
   - mv ./roles-manager-app/dist ./public/_site/role-management
 
 branches:
