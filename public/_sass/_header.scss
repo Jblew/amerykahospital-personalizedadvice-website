@@ -4,34 +4,6 @@
     background-size: cover;
 }
 
-.header-device {
-    text-align: center;
-
-    @include media-breakpoint-down(xs) {
-        margin-top: 3rem;
-        max-height: 9rem;
-        overflow-y: hidden;
-    }
-
-    img {
-        width: 50%;
-        margin: 0 auto;
-
-        @include media-breakpoint-up(sm) {
-            width: 100%;
-            margin: 0 0;
-        }
-    }
-}
-
-.header-titles {
-    margin-top: 1rem;
-
-    @include media-breakpoint-up(sm) {
-        margin-top: 3rem;
-    }
-}
-
 header {
     margin-top: 2rem;
 
@@ -54,5 +26,53 @@ header {
         font-weight: 400;
         letter-spacing: 0.02em;
         font-size: 1rem;
+    }
+
+    .header-device {
+        text-align: center;
+
+        @include media-breakpoint-down(xs) {
+            margin-top: 3rem;
+            max-height: 9rem;
+            overflow-y: hidden;
+        }
+
+        img {
+            width: 50%;
+            margin: 0 auto;
+
+            @include media-breakpoint-up(sm) {
+                width: 100%;
+                margin: 0 0;
+            }
+        }
+    }
+
+    .header-titles {
+        margin-top: 1rem;
+
+        @include media-breakpoint-up(sm) {
+            margin-top: 3rem;
+        }
+    }
+
+    .google-play-button {
+        @include media-breakpoint-down(xs) {
+            width: 100%;
+            text-align: center;
+        }
+
+        img {
+            max-width: 12rem;
+            margin-top: 1rem;
+
+            @include media-breakpoint-up(sm) {
+                margin-top: 2rem;
+            }
+
+            @include media-breakpoint-up(md) {
+                margin-top: 2rem;
+            }
+        }
     }
 }
