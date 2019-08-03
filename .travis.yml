@@ -6,9 +6,12 @@ rvm:
 
 before_install:
   - npm --prefix="./public" install
+  - npm --prefix="./roles-manager-app" ci
 
 script:
   - "./scripts/cibuild.sh"
+  - npm --prefix="./roles-manager-app" build
+  - mv ./roles-manager-app/dist ./public/_site/role-management
 
 branches:
   only:
