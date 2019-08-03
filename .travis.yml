@@ -9,10 +9,10 @@ before_install:
   - npm --prefix="./roles-manager-app" ci
 
 script:
-  - cd public && bundle exec jekyll build
+  - (cd public && bundle exec jekyll build)
   - npm --prefix="./roles-manager-app" run build
   - mv ./roles-manager-app/dist ./public/_site/role-management
-  - cd public && bundle exec htmlproofer ./_site
+  - (cd public && bundle exec htmlproofer ./_site)
 
 branches:
   only:
