@@ -37,9 +37,8 @@ links:
   operator: https://www.ameryka.com.pl/
   privacyPolicy: https://www.ameryka.com.pl/pl/dla-pacjenta/ochrona-danych-osobowych
   license: https://www.gnu.org/licenses/gpl-3.0.html
-  advicePanel: /advice-panel
-  advicePanelOnline: /advice-panel
-  advicePanelDownload: /advice-app-download
+  professionalPanelOnline: /professional-panel
+  professionalPanelDownload: /advice-app-download
   roleManagement: /role-management/
   authorEmailSplit: jedrzej [at] lewandowski.doctor
   publicIssueEmail: szpital@ameryka.com.pl
