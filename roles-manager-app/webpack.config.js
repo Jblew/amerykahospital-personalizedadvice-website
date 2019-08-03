@@ -8,8 +8,9 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
-        publicPath: '/dist',
+        publicPath: '/role-management',
     },
+    mode: "production",
     amd: false,
     node: {
         fs: "empty"
@@ -37,6 +38,9 @@ module.exports = {
         new CopyPlugin([{
             from: './node_modules/firestore-roles-manager-ui/dist/img',
             to: 'img'
+        }, {
+            from: './public',
+            to: ''
         }]),
     ]
 };

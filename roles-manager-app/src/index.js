@@ -8,7 +8,7 @@ const {
 } = require("firestore-roles-manager-ui");
 
 const config = {
-    title: "AmerykaApp roles management",
+    title: "AmerykaApp role management",
     firebase: FIREBASE_CONFIG,
     authProviders: ["google.com", "password"],
     roles: RolesConfig,
