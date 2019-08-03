@@ -37,6 +37,11 @@ links:
   operator: https://www.ameryka.com.pl/
   privacyPolicy: https://www.ameryka.com.pl/pl/dla-pacjenta/ochrona-danych-osobowych
   license: https://www.gnu.org/licenses/gpl-3.0.html
+  advicePanel: /advice-panel
+  advicePanelOnline: /advice-panel
+  advicePanelDownload: /advice-panel-download
+  roleManagement: /role-management/
+  authorEmailSplit: jedrzej [at] lewandowski.doctor
 # Prayer:
 #  Gloria Patri, et Filio, et Spiritui Sancto, sicut erat in principio et nunc et semper et in saecula
 #  saeculorum. Amen. In te, Domine, speravi: non confundar in aeternum.
