@@ -2,46 +2,85 @@
 layout: home
 ---
 
-<div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
-                        dy=".3em">140x140</text>
-                </svg>
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
-                    vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
-                    cursus magna.</p>
-                <p><a class="btn btn-secondary" href="/" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
-                        dy=".3em">140x140</text>
-                </svg>
-                <h2>Heading</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
-                    mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh.</p>
-                <p><a class="btn btn-secondary" href="/" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
-                        dy=".3em">140x140</text>
-                </svg>
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
-                    porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                    fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-secondary" href="/" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
+<div class="container home">
+    <div class="row my-5 feature-row">
+        <div class="col-3 index-img-col index-img-col-left">
+                <img 
+                    class="rounded-circle w-100"
+                    title="Emily Shanks, Ear Inspection, oil on canvas"
+                    alt="Emily Shanks, Ear Inspection, oil on canvas"
+                    src="/assets/square-art/emily_shanks_scene_in_a_russian_hospital_the_ear_inspection.jpg" 
+                />
+            </div>
+        <div class="col-9">
+            <h2>Porady zawsze przy Tobie</h2>
+            <p>
+                Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+                mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh.
+            </p>
+        </div>
+        
     </div>
+
+    <div class="row my-5 feature-row">
+        <div class="col-9">
+            <h2>Pobierz aplikację ze sklepu Google Play</h2>
+            <p>
+                Po utworzeniu porady otrzymasz link, który pozwoli na zainstalowanie aplikacji i dodanie porady.
+                Jeśli jednak wolisz, moesz pobrać i zainstalować aplikację już teraz.
+            </p>
+            <div class="" style="max-width: 10rem;">
+                    {% include google-play-button.html %}
+            </div>
+        </div>
+        <div class="col-3 index-img-col index-img-col-right">
+            <img 
+                class="rounded-circle w-100"
+                title="Emily Shanks, Ear Inspection, oil on canvas"
+                alt="Emily Shanks, Ear Inspection, oil on canvas"
+                src="/assets/square-art/emily_shanks_scene_in_a_russian_hospital_the_ear_inspection.jpg" 
+            />
+        </div>
+    </div>
+
+    <div class="row my-5 feature-row">
+            <div class="col-3 index-img-col index-img-col-left">
+                    <img 
+                        class="rounded-circle w-100"
+                        title="Emily Shanks, Ear Inspection, oil on canvas"
+                        alt="Emily Shanks, Ear Inspection, oil on canvas"
+                        src="/assets/square-art/emily_shanks_scene_in_a_russian_hospital_the_ear_inspection.jpg" 
+                    />
+                </div>
+        <div class="col-9">
+            <h2>Oddział Alergologiczny — wdrożenie</h2>
+            <p>
+                Aplikacja jest aktualnie w fazie wdrażania na oddziale alergologicznym. Oznacza to, że nie
+                we wszystkich przypadkach będzie możliwe wysłanie porady. Podczas wdrażania w aplikacji
+                mogą występować drobne błędy. Będziemy je likwidować na bieżąco. Gorąco prosimy o zgłaszanie
+                wszystkich błędów i problemów na adres email <strong><i>{{ site.links.publicIssueEmail }}</i></strong> 
+                z dopiskiem <i>&ldquo;aplikacja&rdquo;</i> w tytule e-maila. Dzięki Wam aplikacja staje się coraz lepsza!
+            </p>
+        </div>
+    </div>
+
+    <div class="row my-5 feature-row">
+        <div class="col-9">
+            <h2>Wolne oprogramowanie</h2>
+            <p>
+                Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
+                mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh.
+            </p>
+        </div>
+        <div class="col-3 index-img-col index-img-col-right">
+                <img 
+                    class="rounded-circle w-100"
+                    title="Emily Shanks, Ear Inspection, oil on canvas"
+                    alt="Emily Shanks, Ear Inspection, oil on canvas"
+                    src="/assets/square-art/emily_shanks_scene_in_a_russian_hospital_the_ear_inspection.jpg" 
+                />
+            </div>
+    </div>
+</div>

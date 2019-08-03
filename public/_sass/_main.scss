@@ -16,7 +16,36 @@ main {
         margin-left: .75rem;
     }
 
-    h2 {
-        margin-top: 2rem;
+    .main-content {
+        h2 {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.home {
+    .google-play-button img {
+        max-width: 10rem;
+        
+        @include media-breakpoint-up(lg) {
+            max-width: 15rem;
+        }
+    }
+
+    .feature-row {
+        @include media-breakpoint-up(xs) {
+            padding-top: 2rem;
+            padding-bottom: 5rem;
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        .index-img-col-left {
+            padding-right: 0 !important;
+        }
+
+        .index-img-col-right {
+            padding-left: 0 !important;
+        }
     }
 }
