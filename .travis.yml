@@ -16,7 +16,7 @@ script:
   - npm --prefix="./roles-manager-app" run build
   - mv ./roles-manager-app/dist ./public/_site/role-management
   # Build medical professional app
-  - npm --prefix="./roles-manager-app" run build
+  - npm --prefix="./professional-panel" run build
   - mv ./professional-panel/dist ./public/_site/professional-panel
   # Test links on public website
   - (cd public && bundle exec htmlproofer ./_site)
