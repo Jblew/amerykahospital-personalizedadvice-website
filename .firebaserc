@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "amerykahospital-advice-68385"
+  },
+  "targets": {
+    "amerykahospital-advice-68385": {
+      "hosting": {
+        "production": [
+          "amerykahospital-advice-68385"
+        ],
+        "staging": [
+          "amerykahospital-advice-staging"
+        ]
+      }
+    }
   }
 }

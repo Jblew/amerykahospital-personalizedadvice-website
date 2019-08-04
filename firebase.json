@@ -1,5 +1,6 @@
 {
-  "hosting": {
+  "hosting": [{
+    "target": "production",
     "public": "public/_site",
     "ignore": [
       "firebase.json",
@@ -11,5 +12,18 @@
       "source": "/links/**",
       "dynamicLinks": true
     }]
-  }
+  }, {
+    "target": "staging",
+    "public": "public/_site",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "appAssociation": "AUTO",
+    "rewrites": [{
+      "source": "/links/**",
+      "dynamicLinks": true
+    }]
+  }]
 }
