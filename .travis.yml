@@ -37,14 +37,14 @@ addons:
 
 deploy:
   - provider: script
-    script: bash npx firebase deploy --only hosting:staging
+    script: bash -c "npx firebase deploy --only hosting:staging"
     skip_cleanup: true
     on:
       tags: false
       branch: master
 
   - provider: script
-    script: bash npx firebase deploy --only hosting:production
+    script: bash -c "npx firebase deploy --only hosting:production"
     skip_cleanup: true
     on:
       tags: false
