@@ -5,6 +5,7 @@ rvm:
   - 2.3
 
 before_install:
+  - npm i -g firebase-tools
   - npm --prefix="./public" install
   - npm --prefix="./roles-manager-app" ci
   - npm --prefix="./professional-panel" ci
@@ -36,13 +37,14 @@ addons:
 
 deploy:
   - provider: script
-    script: firebase deploy --only hosting:staging
+    script: bash firebase deploy --only hosting:staging
     skip_cleanup: true
     on:
       tags: false
       branch: master
+
   - provider: script
-    script: firebase deploy --only hosting:production
+    script: bash firebase deploy --only hosting:production
     skip_cleanup: true
     on:
       tags: false
