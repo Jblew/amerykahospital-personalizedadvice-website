@@ -11,7 +11,7 @@
   "author": "",
   "license": "GPLv3",
   "dependencies": {
-    "amerykahospital-personalizedadvice-core": "^6.6.1",
+    "amerykahospital-personalizedadvice-core": "^6.7.0",
     "firestore-roles-manager-ui": "^1.6.1"
   },
   "devDependencies": {
