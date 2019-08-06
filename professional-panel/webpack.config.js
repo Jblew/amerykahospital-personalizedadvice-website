@@ -36,6 +36,9 @@ module.exports = {
             hash: true,
         }),
         new CopyPlugin([{
+            from: './node_modules/amerykahospital-personalizedadvice-medicalprofessional-app/dist/img',
+            to: 'img'
+        }, {
             from: './public',
             to: ''
         }]),
