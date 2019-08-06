@@ -9,7 +9,7 @@
     "serve": "webpack-dev-server"
   },
   "author": "",
-  "license": "GPLv3",
+  "license": "GPL-3.0-OR-LATER",
   "dependencies": {
     "amerykahospital-personalizedadvice-medicalprofessional-app": "^1.3.3"
   },

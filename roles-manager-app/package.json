@@ -9,7 +9,7 @@
     "serve": "webpack-dev-server"
   },
   "author": "",
-  "license": "GPLv3",
+  "license": "GPL-3.0-OR-LATER",
   "dependencies": {
     "amerykahospital-personalizedadvice-core": "^6.7.0",
     "firestore-roles-manager-ui": "^1.6.1"
