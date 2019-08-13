@@ -1,32 +1,35 @@
 {
-  "hosting": [{
-    "target": "production",
-    "public": "public/_site",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "appAssociation": "AUTO",
-    "rewrites": [{
-      "source": "/links/**",
-      "dynamicLinks": true
+    "hosting": [{
+        "target": "production",
+        "public": "public/_site",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "appAssociation": "AUTO",
+        "rewrites": [{
+            "source": "/links/**",
+            "dynamicLinks": true
+        }, {
+            "source": "/advice/**",
+            "destination": "/advice.html"
+        }]
     }, {
-      "source": "/advice/**",
-      "destination": "advice.html",
+        "target": "staging",
+        "public": "public/_site",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "appAssociation": "AUTO",
+        "rewrites": [{
+            "source": "/links/**",
+            "dynamicLinks": true
+        }, {
+            "source": "/advice/**",
+            "destination": "/advice.html"
+        }]
     }]
-  }, {
-    "target": "staging",
-    "public": "public/_site",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "appAssociation": "AUTO",
-    "rewrites": [{
-      "source": "/links/**",
-      "dynamicLinks": true
-    }]
-  }]
 }
