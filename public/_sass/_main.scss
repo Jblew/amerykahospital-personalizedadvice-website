@@ -32,7 +32,7 @@ main {
 .home {
     .google-play-button img {
         max-width: 10rem;
-        
+
         @include media-breakpoint-up(lg) {
             max-width: 15rem;
         }
