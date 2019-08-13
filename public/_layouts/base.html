@@ -1,19 +1,12 @@
-<!doctype html>
-<html lang="en">
+---
+layout: boiler
+---
 
-<head>{% include head.html %}</head>
+<div id="top-bg">
+    {% include navbar.html %}
+    <header>{% include header.html %}</header>
+</div>
 
-<body>
-    <div id="top-bg">
-        {% include navbar.html %}
-        <header>{% include header.html %}</header>
-    </div>
+{{ content }}
 
-    {{ content }}
-
-    <footer>{% include footer.html %}</footer>
-
-    {% include foot.html %}
-</body>
-
-</html>
+<footer>{% include footer.html %}</footer>

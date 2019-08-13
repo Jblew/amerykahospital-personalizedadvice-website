@@ -1,5 +1,9 @@
 // Global styling for this template
 
+html {
+    min-height: 100%;
+}
+
 body {
     @include body-font;
 }
@@ -11,6 +15,7 @@ body {
 .google-play-button a {
     display: block;
 }
+
 /*
 p {
     line-height: 1.75;
