@@ -11,6 +11,9 @@
     "rewrites": [{
       "source": "/links/**",
       "dynamicLinks": true
+    }, {
+      "source": "/advice/**",
+      "destination": "advice.html",
     }]
   }, {
     "target": "staging",
