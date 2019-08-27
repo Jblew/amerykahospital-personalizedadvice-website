@@ -1,7 +1,10 @@
 const {
-    FIREBASE_CONFIG,
     RolesConfig
-} = require("amerykahospital-personalizedadvice-core");
+} = require("amerykahospital-personalizedadvice-db");
+
+const {
+    FIREBASE_CONFIG
+} = require("../../settings");
 
 const {
     FirestoreRolesManagerAppUI

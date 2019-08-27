@@ -10,9 +10,11 @@ before_install:
     - |
       if [[ $TRAVIS_BRANCH == "production" ]]; then
         firebase use production
+        settings/scripts/select-production.sh
         echo "Using production environment"
       else
         firebase use preprod
+        settings/scripts/select-preprod.sh
         echo "Using preprod environment"
       fi
     - npm --prefix="./public" install
