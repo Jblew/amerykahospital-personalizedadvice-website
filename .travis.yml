@@ -7,7 +7,7 @@ rvm:
 before_install:
     - npm i -g npm
     - npm i -g firebase-tools
-    - git clone https://jblew:${GH_TOKEN}@github.com/jblew/amerykahospital-personalizedadvice-settings.git functions/src/settings
+    - git clone https://jblew:${GH_TOKEN}@github.com/jblew/amerykahospital-personalizedadvice-settings.git settings
     - |
       if [[ $TRAVIS_BRANCH == "production" ]]; then
         firebase use production
@@ -19,7 +19,6 @@ before_install:
         echo "Using preprod environment"
       fi
 
-    - cat ./settings/index.ts
     - npm --prefix="./public" install
     - npm --prefix="./roles-manager-app" ci
     - npm --prefix="./professional-panel" ci
