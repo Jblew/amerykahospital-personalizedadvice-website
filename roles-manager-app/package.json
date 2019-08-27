@@ -11,16 +11,19 @@
   "author": "",
   "license": "GPL-3.0-OR-LATER",
   "dependencies": {
+    "amerykahospital-personalizedadvice-businesslogic": "^2.1.3",
     "amerykahospital-personalizedadvice-db": "^1.2.1",
     "firestore-roles-manager-ui": "^1.7.0"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^5.0.4",
-    "css-loader": "^3.1.0",
-    "file-loader": "^4.1.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.7.2"
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
   }
 }

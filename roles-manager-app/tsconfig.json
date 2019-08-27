@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "strict": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": false,
+        "noImplicitAny": true,
+        "allowJs": false,
+        "outDir": "lib",
+        "target": "es5",
+        "baseUrl": "src/",
+    },
+    "include": [
+        "src/**/*"
+    ],
+}
