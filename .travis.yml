@@ -2,52 +2,54 @@ language: ruby
 sudo: false
 cache: bundler
 rvm:
-  - 2.3
+    - 2.3
 
 before_install:
-  - npm i -g firebase-tools
-  - npm --prefix="./public" install
-  - npm --prefix="./roles-manager-app" ci
-  - npm --prefix="./professional-panel" ci
+    - npm i -g firebase-tools
+    - git clone https://jblew:${GH_TOKEN}@github.com/jblew/amerykahospital-personalizedadvice-settings.git functions/src/settings
+    - |
+      if [[ $TRAVIS_BRANCH == "production" ]]; then
+        firebase use production
+        echo "Using production environment"
+      else
+        firebase use preprod
+        echo "Using preprod environment"
+      fi
+    - npm --prefix="./public" install
+    - npm --prefix="./roles-manager-app" ci
+    - npm --prefix="./professional-panel" ci
 
 script:
-  # Build public website
-  - (cd public && bundle exec jekyll build)
-  # Build roles manager app
-  - npm --prefix="./roles-manager-app" run build
-  - mv ./roles-manager-app/dist ./public/_site/role-management
-  # Build medical professional app
-  - npm --prefix="./professional-panel" run build
-  - mv ./professional-panel/dist ./public/_site/professional-panel
-  # Test links on public website
-  - (cd public && bundle exec htmlproofer ./_site)
+    # Build public website
+    - (cd public && bundle exec jekyll build)
+    # Build roles manager app
+    - npm --prefix="./roles-manager-app" run build
+    - mv ./roles-manager-app/dist ./public/_site/role-management
+    # Build medical professional app
+    - npm --prefix="./professional-panel" run build
+    - mv ./professional-panel/dist ./public/_site/professional-panel
+    # Test links on public website
+    - (cd public && bundle exec htmlproofer ./_site)
 
 branches:
-  only:
-    - master
-    - production
+    only:
+        - preprod
+        - production
 
 env:
-  global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+    global:
+        - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 addons:
-  apt:
-    packages:
-      - libcurl4-openssl-dev
+    apt:
+        packages:
+            - libcurl4-openssl-dev
 
 deploy:
-  - provider: script
-    script: bash -c "npx firebase deploy --only hosting:staging"
-    skip_cleanup: true
-    on:
-      tags: false
-      branch: master
-
-  - provider: script
-    script: bash -c "npx firebase deploy --only hosting:production"
-    skip_cleanup: true
-    on:
-      tags: false
-      branch: production
-
+    - provider: script
+      script: bash -c "npx firebase deploy --only hosting"
+      skip_cleanup: true
+      on:
+          tags: false
+          all_branches: true
+          condition: $TRAVIS_BRANCH =~ ^(preprod|production)$
