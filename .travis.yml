@@ -19,6 +19,7 @@ before_install:
         echo "Using preprod environment"
       fi
 
+    - npm --prefix="./settings" ci && npm --prefix="./settings" run build
     - npm --prefix="./public" install
     - npm --prefix="./roles-manager-app" ci
     - npm --prefix="./professional-panel" ci

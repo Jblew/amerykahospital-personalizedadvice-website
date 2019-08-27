@@ -4,7 +4,7 @@ const {
 
 const {
     FIREBASE_CONFIG
-} = require("../../settings");
+} = require("../../settings/index");
 
 const {
     FirestoreRolesManagerAppUI
@@ -15,7 +15,7 @@ const config = {
     firebase: FIREBASE_CONFIG,
     authProviders: ["google.com", "password"],
     roles: RolesConfig,
-    basePath: window.location.hostname === "localhost" ? "/dist/" : "/role-management/",
+    basePath: "/role-management/",
 };
 
 FirestoreRolesManagerAppUI.mount("#app", config);
