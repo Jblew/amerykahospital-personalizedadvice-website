@@ -1,9 +1,14 @@
 const {
+    FIREBASE_CONFIG
+} = require("../../settings/index");
+
+const {
     AmerykahospitalPersonalizedadviceMedicalprofessionalappUI
 } = require("amerykahospital-personalizedadvice-medicalprofessional-app");
 
 const config = {
-    basePath: window.location.hostname === "localhost" ? "/dist/" : "/professional-panel/",
+    basePath: "/professional-panel/",
+    firebase: FIREBASE_CONFIG,
 };
 
 AmerykahospitalPersonalizedadviceMedicalprofessionalappUI.mount("#app", config);
