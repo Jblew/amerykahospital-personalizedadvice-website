@@ -6,7 +6,7 @@ Website for AmerykaHospital personalized medical advice system
 
 Automatic Travis CI deployment:
 
-- **master** branch -> preprod
+- **preprod** branch -> preprod
 - **production** branch -> production
 
 ---
