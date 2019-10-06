@@ -12,7 +12,7 @@
   "license": "GPL-3.0-OR-LATER",
   "dependencies": {
     "amerykahospital-personalizedadvice-db": "^1.2.1",
-    "firestore-roles-manager-ui": "^1.7.0"
+    "firestore-roles-manager-ui": "^1.9.0"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^5.0.4",
