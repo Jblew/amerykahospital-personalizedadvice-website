@@ -16,6 +16,17 @@ const config = {
     authProviders: ["google.com", "password"],
     roles: RolesConfig,
     basePath: window.location.hostname === "localhost" ? "/dist/" : "/role-management/",
+    menuLinks: [{
+        text: "Panel porad",
+        href: "https://amerykaapp-preprod.jedrzej.lewandowski.doctor/professional-panel/",
+        icon: "fa-briefcase-medical",
+        target: "_blank"
+    }, {
+        text: "Strona aplikacji",
+        href: "https://amerykaapp-preprod.jedrzej.lewandowski.doctor/",
+        icon: "fa-at",
+        target: "_blank"
+    }]
 };
 
 FirestoreRolesManagerAppUI.mount("#app", config);
