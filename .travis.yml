@@ -34,7 +34,7 @@ script:
     - npm --prefix="./professional-panel" run build
     - mv ./professional-panel/dist ./public/_site/professional-panel
     # Test links on public website
-    - (cd public && bundle exec htmlproofer ./_site)
+    - '(cd public && bundle exec htmlproofer --typhoeus-config "{ \"ssl_verifypeer\": false, \"ssl_verifyhost\": 0  }" ./_site)'
 
 branches:
     only:
