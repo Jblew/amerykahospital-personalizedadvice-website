@@ -25,6 +25,7 @@ before_install:
     - npm --prefix="./professional-panel" ci
 
 script:
+    - node --version
     # Build public website
     - (cd public && bundle exec jekyll build)
     # Build roles manager app
@@ -52,7 +53,7 @@ addons:
 
 deploy:
     - provider: script
-      script: bash -c "npx firebase deploy --only hosting"
+      script: bash -c "node --version && npx firebase deploy --only hosting"
       skip_cleanup: true
       on:
           tags: false
