@@ -11,7 +11,8 @@
   "author": "",
   "license": "GPL-3.0-OR-LATER",
   "dependencies": {
-    "amerykahospital-personalizedadvice-medicalprofessional-app": "^1.7.0"
+    "amerykahospital-personalizedadvice-businesslogic": "^5.8.0",
+    "amerykahospital-personalizedadvice-medicalprofessional-app": "^1.7.1"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^5.0.4",
